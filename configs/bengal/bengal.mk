@@ -201,9 +201,8 @@ PRODUCT_PACKAGES += $(AUDIO_PAL)
 PRODUCT_PACKAGES += $(AUDIO_C2)
 
 # Audio configuration xml's related to Bengal
-CONFIG_PAL_SRC_DIR := vendor/qcom/opensource/pal/configs/bengal
+CONFIG_PAL_SRC_DIR := hardware/qcom-caf/sm6225/audio/pal/configs/bengal
 CONFIG_HAL_SRC_DIR := $(AUDIO_HAL_DIR)/configs/bengal
-
 
 PRODUCT_COPY_FILES += \
     $(CONFIG_HAL_SRC_DIR)/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
